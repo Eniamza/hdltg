@@ -24,7 +24,7 @@ class AdminFilter(BoundFilter):
 
 
 TOKEN = ''
-bot = Bot(TOKEN, parse_mode='Markd602542own')
+bot = Bot(TOKEN, parse_mode='Markdown')
 dp = Dispatcher(bot)
 
 dp.filters_factory.bind(AdminFilter)

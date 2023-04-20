@@ -40,7 +40,7 @@ async def new_members(msg):
         for member in members:
             tg_id = member.id
             name = member.first_name
-            await msg.delete()
+            # await msg.delete()
             
             restricted_permissions = ChatPermissions(
                 can_send_messages=False,

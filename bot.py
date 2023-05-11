@@ -23,12 +23,12 @@ class AdminFilter(BoundFilter):
         return True
 
 
-TOKEN = ''
+TOKEN = '5890627490:AAE-kp_PvRy-Omqmn8gRXqeSVrqOVWETOIE'
 bot = Bot(TOKEN, parse_mode='Markdown')
 dp = Dispatcher(bot)
 
 dp.filters_factory.bind(AdminFilter)
-group = -1001609870701
+group = -1001731926808
 
 
 @dp.message_handler(content_types=ContentType.NEW_CHAT_MEMBERS)
@@ -56,7 +56,7 @@ async def new_members(msg):
             
             rk = InlineKeyboardMarkup()
             fruits = random.sample(cfg['emoji_list'], 5)
-            right = '👨‍🦳'
+            right = '🥞'
             buttons = []
             for fruit in fruits:
                 if fruit == right:
